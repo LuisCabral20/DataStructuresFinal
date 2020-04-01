@@ -16,5 +16,11 @@ namespace DataStructuresFinal
         {
             InitializeComponent();
         }
+
+        private void returnButton_Click(object sender, EventArgs e)
+        {
+            CategoryUserControl cg = new CategoryUserControl();
+            MainControlClass.showControl(cg, contentPanel);
+        }
     }
 }

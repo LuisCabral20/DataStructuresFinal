@@ -23,16 +23,15 @@ namespace DataStructuresFinal
             
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
-            this.Close(); //Closes the  form
+            CategoryUserControl ca = new CategoryUserControl();
+            MainControlClass.showControl(ca, contentPanel);
         }
 
-        private void loginButton_Click_1(object sender, EventArgs e)
+        private void ExitButton_Click(object sender, EventArgs e)
         {
-            //TODO add btn click to send to category
-            CategoryUserControl cg = new CategoryUserControl();
-            MainControlClass.showControl(cg , contentPanel);
+            this.Close(); //Exits the form
         }
     }
 }

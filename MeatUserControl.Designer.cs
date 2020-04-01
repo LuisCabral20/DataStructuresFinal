@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MeatUserControl));
+            this.contentPanel = new System.Windows.Forms.Panel();
+            this.meatCenterPanel = new System.Windows.Forms.Panel();
             this.chuckRoastGroupBox = new System.Windows.Forms.GroupBox();
             this.chuckRoastStocklabel = new System.Windows.Forms.Label();
             this.chuckRoastPictureBox = new System.Windows.Forms.PictureBox();
@@ -41,8 +43,10 @@
             this.salmonStockLabel = new System.Windows.Forms.Label();
             this.salmonPictureBox = new System.Windows.Forms.PictureBox();
             this.salmonBuyButton = new System.Windows.Forms.Button();
-            this.returnButton = new System.Windows.Forms.Button();
             this.meatLabel = new System.Windows.Forms.Label();
+            this.returnButton = new System.Windows.Forms.Button();
+            this.contentPanel.SuspendLayout();
+            this.meatCenterPanel.SuspendLayout();
             this.chuckRoastGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chuckRoastPictureBox)).BeginInit();
             this.chickenBreastGroupBox.SuspendLayout();
@@ -51,18 +55,41 @@
             ((System.ComponentModel.ISupportInitialize)(this.salmonPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
+            // contentPanel
+            // 
+            this.contentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(39)))));
+            this.contentPanel.Controls.Add(this.meatCenterPanel);
+            this.contentPanel.Location = new System.Drawing.Point(0, 0);
+            this.contentPanel.Name = "contentPanel";
+            this.contentPanel.Size = new System.Drawing.Size(1368, 744);
+            this.contentPanel.TabIndex = 23;
+            // 
+            // meatCenterPanel
+            // 
+            this.meatCenterPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.meatCenterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(29)))), ((int)(((byte)(54)))));
+            this.meatCenterPanel.Controls.Add(this.returnButton);
+            this.meatCenterPanel.Controls.Add(this.chuckRoastGroupBox);
+            this.meatCenterPanel.Controls.Add(this.chickenBreastGroupBox);
+            this.meatCenterPanel.Controls.Add(this.salmonGroupBox);
+            this.meatCenterPanel.Controls.Add(this.meatLabel);
+            this.meatCenterPanel.Location = new System.Drawing.Point(163, 37);
+            this.meatCenterPanel.Name = "meatCenterPanel";
+            this.meatCenterPanel.Size = new System.Drawing.Size(1043, 671);
+            this.meatCenterPanel.TabIndex = 24;
+            // 
             // chuckRoastGroupBox
             // 
+            this.chuckRoastGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.chuckRoastGroupBox.Controls.Add(this.chuckRoastStocklabel);
             this.chuckRoastGroupBox.Controls.Add(this.chuckRoastPictureBox);
             this.chuckRoastGroupBox.Controls.Add(this.chuckRoastBuyButton);
-            this.chuckRoastGroupBox.Location = new System.Drawing.Point(767, 176);
+            this.chuckRoastGroupBox.Location = new System.Drawing.Point(723, 197);
             this.chuckRoastGroupBox.Name = "chuckRoastGroupBox";
-            this.chuckRoastGroupBox.Size = new System.Drawing.Size(254, 277);
-            this.chuckRoastGroupBox.TabIndex = 22;
+            this.chuckRoastGroupBox.Size = new System.Drawing.Size(284, 277);
+            this.chuckRoastGroupBox.TabIndex = 27;
             this.chuckRoastGroupBox.TabStop = false;
             this.chuckRoastGroupBox.Text = "Chuck Roast Cut";
-            this.chuckRoastGroupBox.Enter += new System.EventHandler(this.ravioliGroupBox_Enter);
             // 
             // chuckRoastStocklabel
             // 
@@ -76,7 +103,7 @@
             // chuckRoastPictureBox
             // 
             this.chuckRoastPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("chuckRoastPictureBox.Image")));
-            this.chuckRoastPictureBox.Location = new System.Drawing.Point(0, 21);
+            this.chuckRoastPictureBox.Location = new System.Drawing.Point(15, 21);
             this.chuckRoastPictureBox.Name = "chuckRoastPictureBox";
             this.chuckRoastPictureBox.Size = new System.Drawing.Size(254, 205);
             this.chuckRoastPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -86,25 +113,31 @@
             // chuckRoastBuyButton
             // 
             this.chuckRoastBuyButton.AutoSize = true;
-            this.chuckRoastBuyButton.Location = new System.Drawing.Point(167, 232);
+            this.chuckRoastBuyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.chuckRoastBuyButton.Font = new System.Drawing.Font("Bauhaus 93", 9F);
+            this.chuckRoastBuyButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            this.chuckRoastBuyButton.Image = ((System.Drawing.Image)(resources.GetObject("chuckRoastBuyButton.Image")));
+            this.chuckRoastBuyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chuckRoastBuyButton.Location = new System.Drawing.Point(124, 232);
             this.chuckRoastBuyButton.Name = "chuckRoastBuyButton";
-            this.chuckRoastBuyButton.Size = new System.Drawing.Size(61, 27);
+            this.chuckRoastBuyButton.Size = new System.Drawing.Size(118, 32);
             this.chuckRoastBuyButton.TabIndex = 10;
-            this.chuckRoastBuyButton.Text = "&Buy";
-            this.chuckRoastBuyButton.UseVisualStyleBackColor = true;
+            this.chuckRoastBuyButton.Text = "Add to cart";
+            this.chuckRoastBuyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.chuckRoastBuyButton.UseVisualStyleBackColor = false;
             // 
             // chickenBreastGroupBox
             // 
+            this.chickenBreastGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.chickenBreastGroupBox.Controls.Add(this.chickenBreastLabel);
             this.chickenBreastGroupBox.Controls.Add(this.chickenBreastPictureBox);
             this.chickenBreastGroupBox.Controls.Add(this.chickenBreastBuyButton);
-            this.chickenBreastGroupBox.Location = new System.Drawing.Point(416, 176);
+            this.chickenBreastGroupBox.Location = new System.Drawing.Point(372, 197);
             this.chickenBreastGroupBox.Name = "chickenBreastGroupBox";
-            this.chickenBreastGroupBox.Size = new System.Drawing.Size(254, 277);
-            this.chickenBreastGroupBox.TabIndex = 21;
+            this.chickenBreastGroupBox.Size = new System.Drawing.Size(284, 277);
+            this.chickenBreastGroupBox.TabIndex = 26;
             this.chickenBreastGroupBox.TabStop = false;
             this.chickenBreastGroupBox.Text = "Chicken Breast";
-            this.chickenBreastGroupBox.Enter += new System.EventHandler(this.fruitCocktailGroupBox_Enter);
             // 
             // chickenBreastLabel
             // 
@@ -118,7 +151,7 @@
             // chickenBreastPictureBox
             // 
             this.chickenBreastPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("chickenBreastPictureBox.Image")));
-            this.chickenBreastPictureBox.Location = new System.Drawing.Point(0, 21);
+            this.chickenBreastPictureBox.Location = new System.Drawing.Point(15, 21);
             this.chickenBreastPictureBox.Name = "chickenBreastPictureBox";
             this.chickenBreastPictureBox.Size = new System.Drawing.Size(254, 205);
             this.chickenBreastPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,25 +161,31 @@
             // chickenBreastBuyButton
             // 
             this.chickenBreastBuyButton.AutoSize = true;
-            this.chickenBreastBuyButton.Location = new System.Drawing.Point(167, 232);
+            this.chickenBreastBuyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.chickenBreastBuyButton.Font = new System.Drawing.Font("Bauhaus 93", 9F);
+            this.chickenBreastBuyButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            this.chickenBreastBuyButton.Image = ((System.Drawing.Image)(resources.GetObject("chickenBreastBuyButton.Image")));
+            this.chickenBreastBuyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chickenBreastBuyButton.Location = new System.Drawing.Point(127, 232);
             this.chickenBreastBuyButton.Name = "chickenBreastBuyButton";
-            this.chickenBreastBuyButton.Size = new System.Drawing.Size(61, 27);
+            this.chickenBreastBuyButton.Size = new System.Drawing.Size(118, 32);
             this.chickenBreastBuyButton.TabIndex = 10;
-            this.chickenBreastBuyButton.Text = "&Buy";
-            this.chickenBreastBuyButton.UseVisualStyleBackColor = true;
+            this.chickenBreastBuyButton.Text = "Add to cart";
+            this.chickenBreastBuyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.chickenBreastBuyButton.UseVisualStyleBackColor = false;
             // 
             // salmonGroupBox
             // 
+            this.salmonGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
             this.salmonGroupBox.Controls.Add(this.salmonStockLabel);
             this.salmonGroupBox.Controls.Add(this.salmonPictureBox);
             this.salmonGroupBox.Controls.Add(this.salmonBuyButton);
-            this.salmonGroupBox.Location = new System.Drawing.Point(80, 176);
+            this.salmonGroupBox.Location = new System.Drawing.Point(36, 197);
             this.salmonGroupBox.Name = "salmonGroupBox";
-            this.salmonGroupBox.Size = new System.Drawing.Size(254, 277);
-            this.salmonGroupBox.TabIndex = 20;
+            this.salmonGroupBox.Size = new System.Drawing.Size(284, 277);
+            this.salmonGroupBox.TabIndex = 25;
             this.salmonGroupBox.TabStop = false;
             this.salmonGroupBox.Text = "Salmon Cuts";
-            this.salmonGroupBox.Enter += new System.EventHandler(this.beansGroupBox_Enter);
             // 
             // salmonStockLabel
             // 
@@ -160,7 +199,7 @@
             // salmonPictureBox
             // 
             this.salmonPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("salmonPictureBox.Image")));
-            this.salmonPictureBox.Location = new System.Drawing.Point(0, 21);
+            this.salmonPictureBox.Location = new System.Drawing.Point(15, 21);
             this.salmonPictureBox.Name = "salmonPictureBox";
             this.salmonPictureBox.Size = new System.Drawing.Size(254, 205);
             this.salmonPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -170,45 +209,54 @@
             // salmonBuyButton
             // 
             this.salmonBuyButton.AutoSize = true;
-            this.salmonBuyButton.Location = new System.Drawing.Point(167, 232);
+            this.salmonBuyButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.salmonBuyButton.Font = new System.Drawing.Font("Bauhaus 93", 9F);
+            this.salmonBuyButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            this.salmonBuyButton.Image = ((System.Drawing.Image)(resources.GetObject("salmonBuyButton.Image")));
+            this.salmonBuyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.salmonBuyButton.Location = new System.Drawing.Point(128, 232);
             this.salmonBuyButton.Name = "salmonBuyButton";
-            this.salmonBuyButton.Size = new System.Drawing.Size(61, 27);
+            this.salmonBuyButton.Size = new System.Drawing.Size(118, 32);
             this.salmonBuyButton.TabIndex = 10;
-            this.salmonBuyButton.Text = "&Buy";
-            this.salmonBuyButton.UseVisualStyleBackColor = true;
-            // 
-            // returnButton
-            // 
-            this.returnButton.AutoSize = true;
-            this.returnButton.Location = new System.Drawing.Point(510, 686);
-            this.returnButton.Name = "returnButton";
-            this.returnButton.Size = new System.Drawing.Size(62, 36);
-            this.returnButton.TabIndex = 19;
-            this.returnButton.Text = "&Return";
-            this.returnButton.UseVisualStyleBackColor = true;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
+            this.salmonBuyButton.Text = "Add to cart";
+            this.salmonBuyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.salmonBuyButton.UseVisualStyleBackColor = false;
             // 
             // meatLabel
             // 
             this.meatLabel.AutoSize = true;
-            this.meatLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.meatLabel.Location = new System.Drawing.Point(430, 34);
+            this.meatLabel.Font = new System.Drawing.Font("Bauhaus 93", 36F);
+            this.meatLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            this.meatLabel.Location = new System.Drawing.Point(235, 41);
             this.meatLabel.Name = "meatLabel";
-            this.meatLabel.Size = new System.Drawing.Size(294, 36);
-            this.meatLabel.TabIndex = 18;
+            this.meatLabel.Size = new System.Drawing.Size(573, 68);
+            this.meatLabel.TabIndex = 23;
             this.meatLabel.Text = "Fish and other Meats";
+            // 
+            // returnButton
+            // 
+            this.returnButton.AutoSize = true;
+            this.returnButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
+            this.returnButton.Font = new System.Drawing.Font("Bauhaus 93", 10.8F);
+            this.returnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(28)))));
+            this.returnButton.Location = new System.Drawing.Point(468, 584);
+            this.returnButton.Name = "returnButton";
+            this.returnButton.Size = new System.Drawing.Size(106, 42);
+            this.returnButton.TabIndex = 28;
+            this.returnButton.Text = "&Return";
+            this.returnButton.UseVisualStyleBackColor = false;
+            this.returnButton.Click += new System.EventHandler(this.returnButton_Click_1);
             // 
             // MeatUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.chuckRoastGroupBox);
-            this.Controls.Add(this.chickenBreastGroupBox);
-            this.Controls.Add(this.salmonGroupBox);
-            this.Controls.Add(this.returnButton);
-            this.Controls.Add(this.meatLabel);
+            this.Controls.Add(this.contentPanel);
             this.Name = "MeatUserControl";
-            this.Size = new System.Drawing.Size(1100, 756);
+            this.Size = new System.Drawing.Size(1368, 744);
+            this.contentPanel.ResumeLayout(false);
+            this.meatCenterPanel.ResumeLayout(false);
+            this.meatCenterPanel.PerformLayout();
             this.chuckRoastGroupBox.ResumeLayout(false);
             this.chuckRoastGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chuckRoastPictureBox)).EndInit();
@@ -219,12 +267,12 @@
             this.salmonGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salmonPictureBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
+        private System.Windows.Forms.Panel contentPanel;
+        private System.Windows.Forms.Panel meatCenterPanel;
         private System.Windows.Forms.GroupBox chuckRoastGroupBox;
         private System.Windows.Forms.Label chuckRoastStocklabel;
         private System.Windows.Forms.PictureBox chuckRoastPictureBox;
@@ -237,7 +285,7 @@
         private System.Windows.Forms.Label salmonStockLabel;
         private System.Windows.Forms.PictureBox salmonPictureBox;
         private System.Windows.Forms.Button salmonBuyButton;
-        private System.Windows.Forms.Button returnButton;
         private System.Windows.Forms.Label meatLabel;
+        private System.Windows.Forms.Button returnButton;
     }
 }

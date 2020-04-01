@@ -58,6 +58,12 @@
     <Compile Include="CategoryUserControl.Designer.cs">
       <DependentUpon>CategoryUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckOutUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckOutUserControl.Designer.cs">
+      <DependentUpon>CheckOutUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrozenUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryUserControl.resx">
       <DependentUpon>CategoryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOutUserControl.resx">
+      <DependentUpon>CheckOutUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrozenUserControl.resx">
       <DependentUpon>FrozenUserControl.cs</DependentUpon>

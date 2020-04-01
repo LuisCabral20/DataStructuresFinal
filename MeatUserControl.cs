@@ -17,24 +17,10 @@ namespace DataStructuresFinal
             InitializeComponent();
         }
 
-        private void fruitCocktailGroupBox_Enter(object sender, EventArgs e)
+        private void returnButton_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void beansGroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void returnButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ravioliGroupBox_Enter(object sender, EventArgs e)
-        {
-
+            CategoryUserControl cg = new CategoryUserControl();
+            MainControlClass.showControl(cg, contentPanel);
         }
     }
 }
