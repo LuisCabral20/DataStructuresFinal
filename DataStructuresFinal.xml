@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataStructuresFinal</name>
+    </assembly>
+    <members>
+        <member name="T:DataStructuresFinal.CanUserControl">
+            <summary>
+            Implments the can user control
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CanUserControl.#ctor">
+            <summary>
+            CanUserControl default constructor that initializes the component.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CanUserControl.ReturnButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Returns the form back to the checkout usercontrol.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CanUserControl.CanUserControl_Load(System.Object,System.EventArgs)">
+            <summary>
+            Sets the stock text to the items current stock onload of the userControl.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CanUserControl.RavioliBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is the Click event for the Ravioli buy button. It takes an item in the
+            ravioli list and adds it to the user cart list. Then it updates the raviolis
+            stock text.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CanUserControl.FruitCocktailBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is the Click event for the Fruit Cocktail buy button. It takes an item in the
+            Fruit Cocktail list and adds it to the user cart list. Then it updates the Fruit Cocktails
+            stock text.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CanUserControl.BeansBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is the Click event for the Beans buy button. It takes an item in the
+            Beans list and adds it to the user cart list. Then it updates the Beans
+            stock text.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DataStructuresFinal.CanUserControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CanUserControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataStructuresFinal.CanUserControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataStructuresFinal.CartClass">
+            <summary>
+            Creates a Cart class that contains a name and a price.
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.CartClass.Name">
+            <summary>
+            Holds the name of the item.
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.CartClass.Price">
+            <summary>
+            Holds the price of an Item.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CartClass.#ctor(System.String,System.Decimal)">
+            <summary>
+            CartClass default constructor
+            </summary>
+            <param name="conName">The name of the items.</param>
+            <param name="conPrice">The items price.</param>
+        </member>
+        <member name="T:DataStructuresFinal.CategoryUserControl">
+            <summary>
+            Custom usercontrol that implments a food category
+            selection screen.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.#ctor">
+            <summary>
+            The defalut constrouctor for CategoryUserControl
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.FrozenPictureBox_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is the Click event for the Frozen Category. This event will set the content panel
+            to display the FrozenUserControl
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.ProducePictureBox_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is the Click event for the Produce Category. This event will set the content panel
+            to display the ProduceUserControl
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.CanGoodsPictureBox_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is the Click event for the CanGoods Category. This event will set the content panel
+            to display the CanUserControl.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.MeatAndFishPictureBox_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is the Click event for the Meat And Fish Category. This event will set the content panel
+            to display the MeatUserControl.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.ExitButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            This is the exit button click event. It will close the form.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.CheckOutButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            CheckOutButton click event. Will Set the content panel to show the CheckOutUserControl.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DataStructuresFinal.CategoryUserControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataStructuresFinal.CategoryUserControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataStructuresFinal.CheckOutUserControl">
+            <summary>
+            Usercontrol to simulate a checkout screen.
+            </summary>
+        </member>
+        <member name="F:DataStructuresFinal.CheckOutUserControl.dictionary">
+            <summary>
+            Dictionary that take in a string and a Bindinglist. The key will be one of the days of the week
+            reresented as a string and its value will be a list holding available times for that day.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.#ctor">
+            <summary>
+            initialization of the checkout user control
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.ReturnButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Checkout return button click event.
+            shows the CategoryUserControl in the main content panel
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.CheckoutButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            CheckoutButton click event that will make sure the user has entered all
+            necessary data before opening the final checkout messagebox.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.cartDataGridView_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Click event for a cell in the cartdatagridview.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.CheckOutUserControl_Load(System.Object,System.EventArgs)">
+            <summary>
+            checkOutUserControl load event. Sets the time combobox content equal to Mondays available times.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.DayPickComboBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Change event for the dayComboBox. Updates the timeComboBox based on the selecteed day.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.AddDefalutHours(System.ComponentModel.BindingList{System.String}@)">
+            <summary>
+            Adds strings reresenting available time in to the referenced list.
+            </summary>
+            <param name="days">The list being referenced</param>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.SettingTheSum(System.Int32)">
+            <summary>
+            Calculates the sum of each item in the given cellValue
+            </summary>
+            <param name="cellValue">The cells we want to sum</param>
+        </member>
+        <member name="P:DataStructuresFinal.CheckOutUserControl.UserSelectedDay">
+            <summary>
+            Getter and setter for userSelectedDay variable
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.CheckOutUserControl.SelectedTimeIndex">
+            <summary>
+            Getter and setter for selectedTimeIndex variable
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.CheckOutUserControl.CartSum">
+            <summary>
+            Getter and setter for cartSum variable
+            </summary>
+        </member>
+        <member name="F:DataStructuresFinal.CheckOutUserControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataStructuresFinal.CheckOutUserControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataStructuresFinal.CustomScheduleMsgBox">
+            <summary>
+            Create a custome message box that will be used as the final screen in checking out.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CustomScheduleMsgBox.#ctor">
+            <summary>
+            CustomScheduleMsgBox Initialization
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CustomScheduleMsgBox.AcceptButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            AcceptButton click event that saves the users data into a text file called receipt and closes the program.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.CustomScheduleMsgBox.CustomScheduleMsgBox_Load(System.Object,System.EventArgs)">
+            <summary>
+            CustomScheduleMsgBox load event. The label values will be set.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DataStructuresFinal.CustomScheduleMsgBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.CustomScheduleMsgBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataStructuresFinal.CustomScheduleMsgBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataStructuresFinal.FrozenUserControl">
+            <summary>
+            UserControl representing selection of frozen foods to buy.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.FrozenUserControl.#ctor">
+            <summary>
+            Initialize of the frozenUserControl
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.FrozenUserControl.ReturnButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            ReturnButton click event that sets the content panel to show the CategoryUserControl.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.FrozenUserControl.FrozzenPizzaBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the pizzaBuyButton. Removes an item from the pizza list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.FrozenUserControl.FrozenChickenDinnerBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the FrozenChickenDinnerBuyButton. Removes an item from the FrozenChickenDinner list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.FrozenUserControl.IceCreamBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the IceCreamBuyButton. Removes an item from the IceCream list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.FrozenUserControl.FrozenUserControl_Load(System.Object,System.EventArgs)">
+            <summary>
+            FrozenUserControl load event, sets the stock labels based on their item count.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DataStructuresFinal.FrozenUserControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.FrozenUserControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataStructuresFinal.FrozenUserControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataStructuresFinal.MainControlClass">
+            <summary>
+            Class that holds the method to fill a content panel based on a userControl. And
+            Methods that add and remove items from a lists.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.MainControlClass.AddToList(System.Collections.Concurrent.ConcurrentQueue{System.Decimal},System.Int32,System.Decimal)">
+            <summary>
+            Adds a decimal price into a given list.
+            </summary>
+            <param name="inventory">The list where the items will be added</param>
+            <param name="amountToAdd">How many of the itesm to be added</param>
+            <param name="price">The item we are adding</param>
+        </member>
+        <member name="M:DataStructuresFinal.MainControlClass.RemoveFromList(System.Collections.Concurrent.ConcurrentQueue{System.Decimal})">
+            <summary>
+            Removes an item from a givent list
+            </summary>
+            <param name="inventory">The list we will be trying to remove from</param>
+        </member>
+        <member name="M:DataStructuresFinal.MainControlClass.AddToCart(System.Collections.Concurrent.ConcurrentQueue{System.Decimal},System.String)">
+            <summary>
+            Adds an item into the users cart.
+            </summary>
+            <param name="inventoryItem">The list where we will get the item to add</param>
+            <param name="name">Name of the item</param>
+        </member>
+        <member name="M:DataStructuresFinal.MainControlClass.ShowControl(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>
+            This method will fill the content of the form with a given usercontrol
+            </summary>
+            <param name="control">The user control to fill the content</param>
+            <param name="content">A content panel that holds the work area</param>
+        </member>
+        <member name="T:DataStructuresFinal.MainPanelForm">
+            <summary>
+            Creates lists to hold fodd items stock and a binding list to hold CartClass objects.
+            And it implments a login screen.
+            </summary>
+        </member>
+        <member name="F:DataStructuresFinal.MainPanelForm.userName">
+            <summary>
+            Holds the userName entered by the user
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.MainPanelForm.#ctor">
+            <summary>
+            MainPanelForm Initialization that adds items to the list if they are empty.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.MainPanelForm.LoginButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            LoginButton click event. Check if user enterd something in the username and password text boxes then
+            loads the CategoryUserControl.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.MainPanelForm.ExitButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Closes the form
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.RedApplesList">
+            <summary>
+            Getter and setter for the redApplesList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.LettuceList">
+            <summary>
+            Getter and setter for the lettuceList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.BananaList">
+            <summary>
+            Getter and setter for the bananaList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.ChuckRoastList">
+            <summary>
+            Getter and setter for the chuckRoastList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.ChickenBreastList">
+            <summary>
+            Getter and setter for the chickenBreastList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.SalmonList">
+            <summary>
+            Getter and setter for the salmonList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.IceCreamList">
+            <summary>
+            Getter and setter for the iceCreamList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.ChickenDinnerList">
+            <summary>
+            Getter and setter for the chickenDinnerList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.FrozenPizzaList">
+            <summary>
+            Getter and setter for the frozenPizzaList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.RavioliList">
+            <summary>
+            Getter and setter for the ravioliList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.FruitCocktailList">
+            <summary>
+            Getter and setter for the fruitCocktailList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.BeansStockList">
+            <summary>
+            Getter and setter for the beansStockList
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.MainPanelForm.ItemList">
+            <summary>
+            Getter and setter for the 
+            </summary>
+        </member>
+        <member name="F:DataStructuresFinal.MainPanelForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.MainPanelForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataStructuresFinal.MainPanelForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataStructuresFinal.MeatUserControl">
+            <summary>
+            UserControl representing selection of meats and fish to buy
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.MeatUserControl.#ctor">
+            <summary>
+            Defalut constructor for the meatUserControl
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.MeatUserControl.ReturnButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            ReturnButton click event that sets the content panel to show the CategoryUserControl.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.MeatUserControl.MeatUserControl_Load(System.Object,System.EventArgs)">
+            <summary>
+            MeatUserControl load event, sets the stock labels based on their item count.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.MeatUserControl.ChuckRoastBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the ChuckRoastBuyButton. Removes an item from the ChuckRoast list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.MeatUserControl.ChickenBreastBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the ChickenBreastBuyButton. Removes an item from the ChickenBreast list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.MeatUserControl.SalmonBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the SalmonBuyButton. Removes an item from the Salmon list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DataStructuresFinal.MeatUserControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.MeatUserControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataStructuresFinal.MeatUserControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataStructuresFinal.ProduceUserControl">
+            <summary>
+            UserControl representing selection of Produce to buy.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.ProduceUserControl.#ctor">
+            <summary>
+             Defalut constructor for the ProduceUserControl
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.ProduceUserControl.ReturnButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            ReturnButton click event that sets the content panel to show the CategoryUserControl
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.ProduceUserControl.BananaBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the BananaBuyButton. Removes an item from the Banana list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.ProduceUserControl.LettuceBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the LettuceBuyButton. Removes an item from the Lettuce list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.ProduceUserControl.AppleBuyButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Click event for the AppleBuyButton. Removes an item from the Apple list and
+            Adds it into the cart. Then updates the items stock label.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DataStructuresFinal.ProduceUserControl.ProduceUserControl_Load(System.Object,System.EventArgs)">
+            <summary>
+            Produce load event, sets the stock labels based on their item count.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DataStructuresFinal.ProduceUserControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.ProduceUserControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataStructuresFinal.ProduceUserControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataStructuresFinal.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:DataStructuresFinal.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DataStructuresFinal.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
