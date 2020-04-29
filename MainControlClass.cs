@@ -61,6 +61,7 @@ namespace DataStructuresFinal
         /// <param name="content">A content panel that holds the work area</param>
         public static void ShowControl(System.Windows.Forms.Control control, System.Windows.Forms.Control content)
         {
+            
             content.Controls.Clear();
             control.Dock = DockStyle.Fill;
             control.BringToFront();
