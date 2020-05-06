@@ -184,7 +184,7 @@
             this.cartDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(39)))));
             this.cartDataGridView.Size = new System.Drawing.Size(521, 363);
             this.cartDataGridView.TabIndex = 0;
-            this.cartDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cartDataGridView_CellContentClick);
+            this.cartDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CartDataGridView_CellContentClick);
             // 
             // cartEditLabel
             // 

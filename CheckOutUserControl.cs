@@ -23,7 +23,6 @@ namespace DataStructuresFinal
 
         //Lists to represent days of the week
         private static BindingList<string> monday = new BindingList<string>();
-
         private static BindingList<string> tuesday = new BindingList<string>();
         private static BindingList<string> wednesday = new BindingList<string>();
         private static BindingList<string> thursday = new BindingList<string>();
@@ -165,7 +164,7 @@ namespace DataStructuresFinal
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void cartDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void CartDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             // If the cart has 1 item in it
             // Then the next click event means the cart will be empty
@@ -191,7 +190,7 @@ namespace DataStructuresFinal
                 decimal priceAdd = (decimal)cartDataGridView.Rows[namePriceIndex].Cells[2].Value;
 
                 //add back to stock
-                MainControlClass.addToList(nameAdd, priceAdd);
+                MainControlClass.AddToList(nameAdd, priceAdd);
                 MP.ItemList.RemoveAt(cartDataGridView.CurrentCell.RowIndex);
 
                 var Source = new BindingSource();

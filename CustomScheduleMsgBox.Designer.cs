@@ -164,7 +164,7 @@
             this.returnButton.TabIndex = 9;
             this.returnButton.Text = "&Return";
             this.returnButton.UseVisualStyleBackColor = false;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
+            this.returnButton.Click += new System.EventHandler(this.ReturnButton_Click);
             // 
             // CustomScheduleMsgBox
             // 

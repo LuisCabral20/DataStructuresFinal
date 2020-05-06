@@ -57,7 +57,7 @@ namespace DataStructuresFinal
             timeContentLabel.Text = temp.ElementAt(indexRemove).ToString();
         }
 
-        private void returnButton_Click(object sender, EventArgs e)
+        private void ReturnButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }

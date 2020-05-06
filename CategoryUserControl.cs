@@ -25,8 +25,10 @@ namespace DataStructuresFinal
         /// <param name="e"></param>
         private void FrozenPictureBox_Click(object sender, EventArgs e)
         {
+            CategoryUserControl cg = new CategoryUserControl();
             FrozenUserControl fz = new FrozenUserControl();
             MainControlClass.ShowControl(fz, contentPanel);
+            cg.Dispose();
         }
 
         /// <summary>
@@ -37,8 +39,10 @@ namespace DataStructuresFinal
         /// <param name="e"></param>
         private void ProducePictureBox_Click(object sender, EventArgs e)
         {
+            CategoryUserControl cg = new CategoryUserControl();
             ProduceUserControl pd = new ProduceUserControl();
             MainControlClass.ShowControl(pd, contentPanel);
+            cg.Dispose();
         }
 
         /// <summary>
@@ -49,8 +53,10 @@ namespace DataStructuresFinal
         /// <param name="e"></param>
         private void CanGoodsPictureBox_Click(object sender, EventArgs e)
         {
+            CategoryUserControl cg = new CategoryUserControl();
             CanUserControl cn = new CanUserControl();
             MainControlClass.ShowControl(cn, contentPanel);
+            cg.Dispose();
         }
 
         /// <summary>
@@ -61,8 +67,10 @@ namespace DataStructuresFinal
         /// <param name="e"></param>
         private void MeatAndFishPictureBox_Click(object sender, EventArgs e)
         {
+            CategoryUserControl cg = new CategoryUserControl();
             MeatUserControl me = new MeatUserControl();
             MainControlClass.ShowControl(me, contentPanel);
+            cg.Dispose();
         }
 
         /// <summary>

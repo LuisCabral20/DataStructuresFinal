@@ -56,7 +56,7 @@
             this.contentPanel.Controls.Add(this.categoryCenterPanel);
             this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contentPanel.Location = new System.Drawing.Point(0, 0);
-            this.contentPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.contentPanel.Margin = new System.Windows.Forms.Padding(2);
             this.contentPanel.Name = "contentPanel";
             this.contentPanel.Size = new System.Drawing.Size(1026, 604);
             this.contentPanel.TabIndex = 14;
@@ -76,7 +76,7 @@
             this.categoryCenterPanel.Controls.Add(this.categoryTitleLabel);
             this.categoryCenterPanel.Controls.Add(this.produceLabel);
             this.categoryCenterPanel.Location = new System.Drawing.Point(178, 22);
-            this.categoryCenterPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.categoryCenterPanel.Margin = new System.Windows.Forms.Padding(2);
             this.categoryCenterPanel.Name = "categoryCenterPanel";
             this.categoryCenterPanel.Size = new System.Drawing.Size(671, 561);
             this.categoryCenterPanel.TabIndex = 17;
@@ -85,7 +85,7 @@
             // 
             this.frozenPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("frozenPictureBox.Image")));
             this.frozenPictureBox.Location = new System.Drawing.Point(83, 91);
-            this.frozenPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.frozenPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.frozenPictureBox.Name = "frozenPictureBox";
             this.frozenPictureBox.Size = new System.Drawing.Size(197, 184);
             this.frozenPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,7 +97,7 @@
             // 
             this.producePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("producePictureBox.Image")));
             this.producePictureBox.Location = new System.Drawing.Point(390, 91);
-            this.producePictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.producePictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.producePictureBox.Name = "producePictureBox";
             this.producePictureBox.Size = new System.Drawing.Size(197, 184);
             this.producePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +109,7 @@
             // 
             this.meatAndFishPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("meatAndFishPictureBox.Image")));
             this.meatAndFishPictureBox.Location = new System.Drawing.Point(390, 315);
-            this.meatAndFishPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.meatAndFishPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.meatAndFishPictureBox.Name = "meatAndFishPictureBox";
             this.meatAndFishPictureBox.Size = new System.Drawing.Size(197, 184);
             this.meatAndFishPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,7 +121,7 @@
             // 
             this.canGoodsPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("canGoodsPictureBox.Image")));
             this.canGoodsPictureBox.Location = new System.Drawing.Point(83, 315);
-            this.canGoodsPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.canGoodsPictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.canGoodsPictureBox.Name = "canGoodsPictureBox";
             this.canGoodsPictureBox.Size = new System.Drawing.Size(197, 184);
             this.canGoodsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -160,7 +160,7 @@
             this.exitButton.Font = new System.Drawing.Font("Bauhaus 93", 10.8F);
             this.exitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.exitButton.Location = new System.Drawing.Point(353, 514);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(64, 34);
             this.exitButton.TabIndex = 27;
@@ -175,7 +175,7 @@
             this.checkOutButton.Font = new System.Drawing.Font("Bauhaus 93", 10.8F);
             this.checkOutButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(255)))), ((int)(((byte)(252)))));
             this.checkOutButton.Location = new System.Drawing.Point(253, 514);
-            this.checkOutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkOutButton.Margin = new System.Windows.Forms.Padding(2);
             this.checkOutButton.Name = "checkOutButton";
             this.checkOutButton.Size = new System.Drawing.Size(85, 34);
             this.checkOutButton.TabIndex = 26;
@@ -226,7 +226,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(39)))));
             this.Controls.Add(this.contentPanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CategoryUserControl";
             this.Size = new System.Drawing.Size(1026, 604);
             this.contentPanel.ResumeLayout(false);

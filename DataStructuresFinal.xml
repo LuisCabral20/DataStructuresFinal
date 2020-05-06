@@ -200,7 +200,7 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:DataStructuresFinal.CheckOutUserControl.cartDataGridView_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+        <member name="M:DataStructuresFinal.CheckOutUserControl.CartDataGridView_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
             <summary>
             Click event for a cell in the cartdatagridview.
             </summary>

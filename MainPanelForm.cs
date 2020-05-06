@@ -25,7 +25,7 @@ namespace DataStructuresFinal
         /// </summary>
         public static string userName;
         static Boolean inventoryLoaded = false;
-        private static BindingList<CartClass> itemList = new BindingList<CartClass>();
+        private static List<CartClass> itemList = new List<CartClass>();
 
         //Produce
         private static ConcurrentQueue<decimal> redApplesList = new ConcurrentQueue<decimal>();
@@ -222,7 +222,7 @@ namespace DataStructuresFinal
         /// <summary>
         /// Getter and setter for the 
         /// </summary>
-        public BindingList<CartClass> ItemList
+        public List<CartClass> ItemList
         {
             get { return itemList; }
             set { itemList = value; }

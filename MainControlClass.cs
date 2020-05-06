@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace DataStructuresFinal
@@ -18,9 +20,16 @@ namespace DataStructuresFinal
         /// <param name="price">The item we are adding</param>
         public void AddToList(ConcurrentQueue<decimal> inventory, int amountToAdd, decimal price)
         {
-            for (int i = 0; i < amountToAdd; i++)
+            try
             {
-                inventory.Enqueue(price);
+                for (int i = 0; i < amountToAdd; i++)
+                {
+                    inventory.Enqueue(price);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -51,6 +60,7 @@ namespace DataStructuresFinal
                 MainPanelForm MP = new MainPanelForm();
                 inventoryItem.TryPeek(out decimal price);       // Gets the price from the list
                 MP.ItemList.Add(new CartClass(name, price));    // Adds into the cart
+                ListSort();                            //Sorting
             }
         }
 
@@ -61,16 +71,22 @@ namespace DataStructuresFinal
         /// <param name="content">A content panel that holds the work area</param>
         public static void ShowControl(System.Windows.Forms.Control control, System.Windows.Forms.Control content)
         {
-            
-            content.Controls.Clear();
-            control.Dock = DockStyle.Fill;
-            control.BringToFront();
-            content.BringToFront();
-            control.Focus();
-            content.Controls.Add(control);
+            try
+            {
+                content.Controls.Clear();
+                control.Dock = DockStyle.Fill;
+                content.BringToFront();
+                control.Focus();
+                content.Controls.Add(control);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                System.Environment.Exit(1);
+            }
         }
 
-        public static void addToList(string listName, decimal price)
+        public static void AddToList(string listName, decimal price)
         {
             MainPanelForm MP = new MainPanelForm();
 
@@ -124,6 +140,39 @@ namespace DataStructuresFinal
                     MP.IceCreamList.Enqueue(price);
                     break;
             }
+        }
+
+        public static void ListSort()
+        {
+            MainPanelForm MP = new MainPanelForm();
+
+            if (MP.ItemList.Count <=1)
+            {
+                return;
+            }
+            else
+            {
+                CartClass[] array = new CartClass[MP.ItemList.Count];
+                MP.ItemList.CopyTo(array, 0);
+                ArraySort(array);
+                MP.ItemList.Clear();
+                foreach (CartClass cart in array)
+                {
+                    MP.ItemList.Add(cart);
+                }
+            }
+        }
+
+        public static void ArraySort(CartClass[] arrayName)
+        {
+            for (int i = 0; i < arrayName.Length - i - 1; i++)
+                if (arrayName[i].Price > arrayName[i + 1].Price)
+                {
+                    // swap
+                    CartClass temp = arrayName[i];
+                    arrayName[i] = arrayName[i + 1];
+                    arrayName[i + 1] = temp;
+                }
         }
     }
 }
